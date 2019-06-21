@@ -1,0 +1,18 @@
+$base-white-color: #FFFFFF;
+
+$base-emperor-color: #555555;
+$base-silver-color: #AAAAAA;
+$base-alto-color: #E0E0E0;
+
+$base-radial-color: radial-gradient(circle, rgb(35, 29, 24) 25%, rgba(0, 0, 0, 0) 25%), radial-gradient(circle, rgb(63, 57, 50) 25%, rgba(0, 0, 0, 0) 25%), radial-gradient(circle, rgb(35, 29, 24) 25%, rgba(0, 0, 0, 0) 25%), radial-gradient(circle, rgb(63, 57, 50) 25%, rgba(0, 0, 0, 0) 25%), rgba(0, 57, 84, 1);
+
+
+//Typography
+$typography-map: (
+  mobile: (
+    default:        17px,
+  ),
+  tablet: (
+    default:        18px,
+  )
+);

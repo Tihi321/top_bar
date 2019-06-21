@@ -1,62 +1,78 @@
-[
-  {
-    "title": "MB Artist",
-    "path": "",
-    "color": "#111111",
-    "link": "https://tihi321.github.io"
-  },
-  {
-    "title": "Code Playground",
-    "path": "playground",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/"
-  },
-  {
-    "title": "Development CV",
-    "path": "development",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/Development_Wordpress//"
-  },
-  {
-    "title": "Editing CV",
-    "path": "video",
-    "color": "#333333",
-    "link": "https://tihomirselak.wordpress.com/"
-  },
-  {
-    "title": "TuduList JS",
-    "path": "tudulist",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=TodoList_App&fullscreen"
-  },
-  {
-    "title": "Clipboard JS",
-    "path": "clipboard",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Clipboard_App&fullscreen"
-  },
-  {
-    "title": "Char Codes JS",
-    "path": "charcodes",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Char_Codes&fullscreen"
-  },
-  {
-    "title": "JSON Minify JS",
-    "path": "minify",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Json_Minify&fullscreen"
-  },
-  {
-    "title": "Oracle JS",
-    "path": "oracle",
-    "color": "#333333",
-    "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Oracle&fullscreen"
-  },
-  {
-    "title": "CAD Models",
-    "path": "cad",
-    "color": "#333333",
-    "link": "https://sketchfab.com/playlists/embed?collection=1b26d3edeaa2457b86e7a2b3dc303419"
-  }
+[{
+  "title": "Resume",
+  "path": "",
+  "color": "#111111",
+  "link": "https://tihi321.github.io/"
+},
+{
+  "title": "Code Playground",
+  "path": "playground",
+  "color": "#333333",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/"
+}, {
+  "title": "Klinika Mockups",
+  "path": "klinika",
+  "color": "#E1B16A",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=web&fullscreen"
+},
+{
+  "title": "GSAP Banner",
+  "path": "banner",
+  "color": "#506EAE",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=GSAP_Banner&min-notopbar-left-jsonly"
+},
+{
+  "title": "Color Excercise",
+  "path": "color",
+  "color": "#AAC3C0",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Color_Excercise"
+},
+{
+  "title": "Monitor Switcher",
+  "path": "monitor",
+  "color": "#22A86D",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Monitor_Switcher&fullscreen"
+},
+{
+  "title": "TuduList JS",
+  "path": "tudulist",
+  "color": "#607D8B",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=TodoList_App&min-play-notopbar-left-nohtml"
+},
+{
+  "title": "Clipboard JS",
+  "path": "clipboard",
+  "color": "#2980E9",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Clipboard_App&min-play-notopbar-left-nohtml"
+},
+{
+  "title": "Char Codes JS",
+  "path": "charcodes",
+  "color": "#3498DB",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Char_Codes&min-notopbar-left-jsonly"
+},
+{
+  "title": "JSON Minify JS",
+  "path": "minify",
+  "color": "#16A085",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Json_Minify&min-notopbar-left-jsonly"
+},
+{
+  "title": "Oracle JS",
+  "path": "oracle",
+  "color": "#342148",
+  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Oracle&fullscreen"
+},
+{
+  "title": "Editing CV",
+  "path": "video",
+  "color": "#23282D",
+  "link": "https://tihomirselak.wordpress.com/"
+},
+{
+  "title": "CAD Models",
+  "path": "cad",
+  "color": "#697E68",
+  "link": "https://sketchfab.com/playlists/embed?collection=1b26d3edeaa2457b86e7a2b3dc303419"
+}
 ]

@@ -1,9 +1,0 @@
-@mixin bg-hover($color, $opacity: 0.9) {
-    background: $color;
-    /* The Fallback */
-    background: rgba($color, $opacity);
-}
-
-@function mapPointerPosition($size) {
-    @return ($size / 4)*-1;
-}

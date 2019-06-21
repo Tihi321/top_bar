@@ -6,19 +6,19 @@
             background-repeat: no-repeat;
             margin-top: 15px;
             background-color: transparent;
-            @media screen and (min-width: $size_mobile) {
-                display: block;
-                opacity: .7;
-                cursor: pointer;
-                width: 25px;
-                height: 19px;
-                margin-left: 5px;
-                outline: none;
-                border: none;
-                transition: opacity .1s ease;
-                &:hover {
-                    opacity: 1;
-                }
+            @include media(mobile) {
+              display: block;
+              opacity: .7;
+              cursor: pointer;
+              width: 25px;
+              height: 19px;
+              margin-left: 5px;
+              outline: none;
+              border: none;
+              transition: opacity .1s ease;
+              &:hover {
+                  opacity: 1;
+              }
             }
             &.desktop {
                 background-position: 0 0;

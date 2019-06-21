@@ -1,0 +1,75 @@
+$select-colors: (
+  text-color: $base-white-color,
+  bg-color: $base-alto-color,
+  border-color: $base-silver-color,
+);
+
+.select {
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid map-get($select-colors, 'border-color');
+  color: map-get($select-colors, 'text-color');
+  background-color: map-get($select-colors, 'bg-color');
+  box-sizing: border-box;
+  padding: 5px 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  @include media(mobile) {
+    width: 200px;
+    margin: 0 10px;
+  }
+
+  &.is-active {
+    .select__options {
+      display: block;
+    }
+  }
+
+  &__options {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: map-get($select-colors, 'bg-color');
+    width: 100%;
+    left: 0;
+    margin-top: 20px;
+    border: 1px solid map-get($select-colors, 'border-color');
+    z-index: 2;
+  }
+
+  &__placeholder {
+    line-height: 1;
+    opacity: 0.8;
+    transform: translateY(50%);
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__option {
+    padding: 7px 10px;
+    transition: opacity 0.2s ease;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__backdrop {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
