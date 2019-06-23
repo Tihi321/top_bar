@@ -13,6 +13,9 @@ const TopBar = (props) => {
     attributes: {
       projects,
       menuToggle,
+      logo,
+      showMessage,
+      message,
     },
     dataStore,
   } = props;
@@ -20,15 +23,17 @@ const TopBar = (props) => {
   const style_topbar = {
     backgroundColor: color,
   }
-  const ticker = (path === "") ? "👋👋👋 SIDE OTHER THE FROM HELLO 👋👋👋" : "";
+  const ticker = (message) ? message : '👋👋👋 SIDE OTHER THE FROM HELLO 👋👋👋';
 
   return (
       <div style={style_topbar} className="top-bar">
-          <Logo />
+          <Logo
+            logo={logo}
+          />
           <div className="header-text">Menu</div>
           <Menu dataStore={dataStore} menuToggle={menuToggle} selectedProject={selectedProject} projects={projects} />
           <Viewport dataStore={dataStore} />
-          <div className="ticker"><p>{ticker}</p></div>
+          {(showMessage && path === "") && <div className="ticker"><p>{ticker}</p></div>}
       </div>
   )
 }
