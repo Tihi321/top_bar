@@ -7,13 +7,13 @@
     transition: background-color 100ms ease;
     .header-text {
         display: none;
-        @media screen and (min-width: $size_mobile) {
-            display: block;
-            cursor: default;
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin: 10px 5px 0 5px;
+        @include media(mobile) {
+          display: block;
+          cursor: default;
+          color: #fff;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 10px 5px 0 5px;
         }
     }
     .logo {
@@ -31,16 +31,16 @@
             width: 100%;
         }
     }
-    @import "components/select";
-    @import "components/screen-btns";
+    @import "parts/select";
+    @import "parts/screen-btns";
     .ticker {
         flex: 1;
         white-space: nowrap;
         overflow: hidden;
         display: none;
         align-items: center;
-        @media screen and (min-width: $size_desktop) {
-            display: flex;
+        @include media(desktop) {
+          display: flex;
         }
         p {
             display: inline-block;

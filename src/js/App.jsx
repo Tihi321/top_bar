@@ -1,33 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import TopBar from './components/TopBar.jsx';
 import IframeContainer from './components/IframeContainer.jsx';
 
-class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            selectedWidth: undefined
-        }
-    }
-    render() {
-        return (
-            <div className="container">
-                <TopBar selectedProject={this.props.selectedProject} projects={this.props.projects} selectedWithInTopBar={this.selectedWithInApp.bind(this)} />
-                <IframeContainer selectedWidth={this.state.selectedWidth} selectedProject={this.props.selectedProject} defaultOptions={this.props.delaultOptions} />
-            </div>
-        )
-    }
+const App = (props) => {
+  const {
+    attributes,
+    dataStore,
+    selectedProject,
+  } = props;
 
-    selectedWithInApp(selectedWithInApp) {
-        this.setState({ selectedWidth: selectedWithInApp });
-    }
+  return (
+    <div className="container">
+        <TopBar attributes={attributes} dataStore={dataStore} selectedProject={selectedProject} />
+        <IframeContainer attributes={attributes} selectedProject={selectedProject} />
+    </div>
+  )
 }
-
-// Specifies the default values for props:
-App.defaultProps = {
-    delaultOptions: {
-        width: '100%'
-    }
-};
 
 export default App;

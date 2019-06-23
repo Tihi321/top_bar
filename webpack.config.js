@@ -16,7 +16,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: './js/[name].js',
-        //publicPath: '/public',
+        // publicPath: '/src',
     },
     plugins: [
         new HtmlWebpackPlugin({filename: 'index.html', template: 'src/index.html', hash: true}),
@@ -77,8 +77,11 @@ module.exports = {
         ]
     },
     devServer: {
+        contentBase: path.join(__dirname, 'src'),
         hot: true,
         stats: "errors-only",
-        open: true
+        open: true,
+        port: 3000,
+        historyApiFallback: true,
     }
 };

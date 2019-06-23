@@ -1,31 +1,49 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 import SelectOption from './SelectOption.jsx';
-import { withRouter, history } from 'react-router-dom'
+import SelectBackdrop from './SelectBackdrop.jsx';
+import SelectPlaceholder from './SelectPlaceholder.jsx';
 
-class Menu extends Component {
-    bindSelectItems() {
-        let items = [];
-        if (this.props.projects.length >= 1) {
-            items = this.props.projects.map((options, index) => {
-                    return (
-                        <SelectOption selectOptions={options} key={index} />
-                    );
-                });
-        }
-        return items;
-    }
-    render() {
-        let select_items = this.bindSelectItems();
-        return (
-            <select value={this.props.selectedProjectPath} onChange={this.handleOnChange.bind(this)} className="select">
-                {select_items}
-            </select>
-        )
-    }
+const Menu = (props) => {
+  const {
+    selectedProject: {
+      title,
+      color,
+    },
+    projects,
+    dataStore,
+    menuToggle,
+  } = props;
 
-    handleOnChange(e){
-        this.props.history.push(e.target.value);
+  const bindSelectItems = () => {
+    let items = [];
+    if (projects.length >= 1) {
+        items = projects.map((options, index) => {
+                return (
+                    <SelectOption dataStore={dataStore} selectOptions={options} key={index} />
+                );
+            });
     }
-}
+    return items;
+  };
 
-export default withRouter(Menu);
+  const select_items = bindSelectItems();
+  const selectClasses = (menuToggle) ? 'select is-active' : 'select';
+
+  return (
+    <Fragment>
+        <div className={selectClasses}>
+          <SelectPlaceholder
+            color={color}
+            title={title}
+            dataStore={dataStore}
+          />
+          <div className="select__options">
+            {select_items}
+          </div>
+        </div>
+        {(menuToggle) && <SelectBackdrop dataStore={dataStore} ></SelectBackdrop>}
+      </Fragment>
+  )
+};
+
+export default Menu;

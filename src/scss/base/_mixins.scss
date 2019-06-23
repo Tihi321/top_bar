@@ -1,0 +1,28 @@
+@mixin bg-hover($color, $opacity: 0.9) {
+    background: $color;
+    /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@function mapPointerPosition($size) {
+    @return ($size / 4)*-1;
+}
+
+//Text single size item from map
+@mixin text-size($size, $map: $typography-map) {
+  $i: 0;
+
+  @each $breakpoint, $breakpointMap in $map {
+    @if $i == 0 {
+      font-size: map_get($breakpointMap, $size);
+    }
+
+    @else {
+      @include media(#{$breakpoint}) {
+        font-size: map_get($breakpointMap, $size);
+      }
+    }
+
+    $i: $i + 1;
+  }
+}

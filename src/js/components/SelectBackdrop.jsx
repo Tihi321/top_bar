@@ -1,13 +1,7 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom'
 
-const SelectOption = (props) => {
+const SelectBackdrop = (props) => {
   const {
-    selectOptions: {
-      path,
-      title,
-      color,
-    },
     dataStore,
   } = props;
 
@@ -17,7 +11,6 @@ const SelectOption = (props) => {
         action: 'menuClose',
         value: '',
       });
-      props.history.push(path);
     }
   };
 
@@ -26,25 +19,18 @@ const SelectOption = (props) => {
       action: 'menuClose',
       value: '',
     });
-    props.history.push(path);
-  };
-
-  const optionsStyle = {
-    backgroundColor: color,
   };
 
   return (
     <div
-      className="select__option"
-      style={optionsStyle}
+      className="select__backdrop"
       tabIndex={-1}
       role="button"
       onKeyPress={keyUpCallback}
       onClick={onClickCallback} 
     >
-        {title}
     </div>
   )
 }
 
-export default withRouter(SelectOption);
+export default SelectBackdrop;
