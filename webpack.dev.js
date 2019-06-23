@@ -21,7 +21,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({filename: 'index.html', template: 'src/index.html', hash: true}),
         new ExtractTextWebpackPlugin({filename: "css/style.css", disable: false, allChunks: true}),
-        new CleanWebpackPlugin(['public']),
+        // new CleanWebpackPlugin(['public']), remove for development for nginx
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],

@@ -8,66 +8,49 @@
   "title": "Code Playground",
   "path": "playground",
   "color": "#333333",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/"
-}, {
-  "title": "Klinika Mockups",
-  "path": "klinika",
-  "color": "#E1B16A",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=web&fullscreen"
-},
-{
-  "title": "GSAP Banner",
-  "path": "banner",
-  "color": "#506EAE",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=GSAP_Banner&min-notopbar-left-jsonly"
+  "link": "https://code.tihomir-selak.from.hr/"
 },
 {
   "title": "Color Excercise",
   "path": "color",
   "color": "#AAC3C0",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Color_Excercise"
-},
-{
-  "title": "Monitor Switcher",
-  "path": "monitor",
-  "color": "#22A86D",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Monitor_Switcher&fullscreen"
+  "link": "https://code.tihomir-selak.from.hr/?p=Color_Excercise"
 },
 {
   "title": "TuduList JS",
   "path": "tudulist",
   "color": "#607D8B",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=TodoList_App&min-play-notopbar-left-nohtml"
+  "link": "https://code.tihomir-selak.from.hr/?p=TodoList_App&min-play-notopbar-left-nohtml"
 },
 {
   "title": "Clipboard JS",
   "path": "clipboard",
   "color": "#2980E9",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?p=Clipboard_App&min-play-notopbar-left-nohtml"
-},
-{
-  "title": "Char Codes JS",
-  "path": "charcodes",
-  "color": "#3498DB",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Char_Codes&min-notopbar-left-jsonly"
+  "link": "https://code.tihomir-selak.from.hr/?p=Clipboard_App&min-play-notopbar-left-nohtml"
 },
 {
   "title": "JSON Minify JS",
   "path": "minify",
   "color": "#16A085",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Json_Minify&min-notopbar-left-jsonly"
+  "link": "https://code.tihomir-selak.from.hr/?s=Json_Minify&min-notopbar-left-jsonly"
 },
 {
   "title": "Oracle JS",
   "path": "oracle",
   "color": "#342148",
-  "link": "https://motionbumpcom.ipage.com/Subdomains/tests/code/?s=Oracle&fullscreen"
+  "link": "https://code.tihomir-selak.from.hr/?s=Oracle&fullscreen"
 },
 {
-  "title": "Editing CV",
-  "path": "video",
-  "color": "#23282D",
-  "link": "https://tihomirselak.wordpress.com/"
+  "title": "Banner Design",
+  "path": "design",
+  "color": "#3498DB",
+  "link": "https://code.tihomir-selak.from.hr/?s=domenica&min-notopbar-left-htmlonly"
+},
+{
+  "title": "GSAP Banner",
+  "path": "banner",
+  "color": "#506EAE",
+  "link": "https://code.tihomir-selak.from.hr/?p=GSAP_Banner&min-notopbar-left-jsonly"
 },
 {
   "title": "CAD Models",

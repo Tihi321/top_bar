@@ -15,6 +15,7 @@ $select-colors: (
   padding: 5px 10px;
   white-space: nowrap;
   font-weight: bold;
+  width: 100%;
   @include media(mobile) {
     width: 200px;
     margin: 0 10px;
