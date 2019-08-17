@@ -27,7 +27,7 @@ class Routes extends PureComponent {
     }
 
     fetchData() {
-      const fetchUrl = 'https://blog.tihomir-selak.from.hr/index.php?rest_route=/portfolio-backend/v1/portfolio-options';
+      const fetchUrl = 'https://blog.tihomir-selak.from.hr/index.php?rest_route=/portfolio-backend/v1/portfolio-topbar';
       fetch(fetchUrl)
         .then(res => res.json())
         .then((result) => {
